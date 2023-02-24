@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "GogoHack";
+  src: local("GogoHack"),
+   url("./fonts/gogo_hack/GoGo-Hack.ttf") format("truetype");
+  font-weight: bold;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Fivo";
+  src: local("Fivo"),
+   url("./fonts/Fivo-Sans-Font/FivoSans/FivoSans-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Fivo";
+  src: local("Fivo"),
+   url("./fonts/Fivo-Sans-Font/FivoSans/FivoSans-Bold.otf") format("truetype");
+  font-weight: bold;
+}
+
+.gogo{
+  font-family: GogoHack;
+}
+
+.fivo{
+  font-family: Fivo;
+}
+
+.main {
+  margin: 0 10% 0 10%;
 }

@@ -1,38 +1,260 @@
-.App {
-  text-align: center;
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.three {
+  opacity: 0.7;
+  background-color: #171020;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  background-color: black;
+  height: 9.8vh;
+  width: 94%;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  padding: 0 3% 0 3%;
+  border: solid;
+  border-width: 0 0 1px 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+.forward {
+  transform: translateZ(1px);
+}
+
+.forwardd {
+  transform: translateZ(1px);
+  z-index: 2;
+}
+
+.fel{
+  font-size: 5vh;
+  margin: 1%;
+}
+
+a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.links li {
+  transition: 0.2s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links li:hover{
+  transform: scale(1.1);
+}
+
+.links {
+  width: 50%;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.links li {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sign {
+  color: #fb607f;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: large;
+  transition: 0.2s;
+}
+
+.sign:hover{
+  transform: scale(1.1);
+}
+
+.line {
+  width: 0;
+  bottom: 0;
+  height: 90vh;
+  border: solid;
+  border-width: 1px;
+  position: fixed;
+}
+
+.left {
+  left: 10%;
+}
+
+.middle {
+  left: 40%;
+}
+
+.right {
+  right: 10%;
+}
+
+.register {
+  font-family: 'Fivo';
+  position: fixed;
+  left: 10%;
+  bottom: 1px;
+  width: 30%;
+  height: 8%;
+  background-color: rgb(0,0,0,0);
+  border: solid;
+  border-width: 2px 0 2px 0;
+  border-color: white;
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.register:hover {
+  background-color: white;
+  color: black;
+}
+
+.f{
+  position: fixed;
+  transform: rotate(270deg);
+  font-family: GogoHack;
+  bottom: 30vmin;
+  left: 5vmax;
+  font-size: 8.7vmin;
+  margin: 0;
+}
+
+.red{
+  color: #fb607f;
+}
+
+.f h1{
+  margin: 0;
+  height: 8vmax;
+}
+
+code{font-family: Fivo;}
+
+.ver{
+  position: fixed;
+  left: 15vmax;
+  bottom: 9vmin;
+  font-size: 1.4vmax;
+}
+
+.title{
+  position: fixed;
+  width: 20vmax;
+  left: 15vmax;
+  top: 13%;
+}
+
+.spontit{
+  position: fixed;
+  width: 16vmax;
+  left: 17vmax;
+  top: 13%;
+}
+
+.date {
+  text-align: right;
+  margin: 65vh 12% 0% 10%;
+  font-size: 500%;
+}
+.month {
+  text-align: right;
+  margin: 0% 12% 0% 40%;
+  font-size: 200%;
+}
+
+.horline {
+  width: 49.8%;
+  margin: 2.1% 10% 0 40%;
+  height: 0;
+  border: solid;
+  border-width: 1px;
+}
+
+.about {
+  margin: 0 10% 0 40%;
+  padding: 2% 10% 2% 10%;
+  text-align: center;
+}
+
+h1.about{
+  /* border: solid 2px white; */
+  background-color: white;
+}
+
+p.about{
+  margin-top: 8%;
+  font-size: 120%;
+  margin-bottom: 8%;
+  text-align: justify;
+}
+
+.fig{
+  width: 16.5vw;
+  display: flex;
+  flex-direction: row;
+  margin-left: 40vw;
+  justify-content: space-between;
+}
+
+.fig img {
+  width: 10vw;
+  padding: 6vh 6vw 6vh 6vw;
+}
+
+.footer {
+  background-color: black;
+  margin: 0 10% 0 40%;
+  padding: 2% 0 2% 0;
+  border: solid 2px;
+}
+
+.container {
+  margin-left: 40%;
+  margin-right: 10%;
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: solid white;
+  border-bottom: 2px;
+}
+.container div{
+  font-size: 80%;
+  text-align: center;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.fiximg{
+  width: 10vw;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.qual{
+  margin-left: 45%;
+  width: 40vw;
+}
+
+.sponimg {
+  width: 15vw;
 }
